@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app=''>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Hovis App Generic Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.min.css">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+    <div class='header-box'>
+        <img src="assets/img/hovis-logo-small.png">
+        <h1>
+            New Raw Material Request
+        </h1>
+        <div class='logout'>
+            <span class='glyphicon glyphicon-log-out'></span> <a href="">Logout from hovis.co.uk</a>
+        </div>
+
+    </div>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-md-8 col-md-offset-2 hovis-panel mainPanel panel'>
+
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-3">
+                        <br />
+                        <div class="sidebar-nav">
+
+                            <ul class="nav nav-list">
+                                <li class="active"><a href="#">Originator &nbsp;&nbsp;<span style="color: green" class="glyphicon glyphicon-ok"></span></a></li>
+                                <li class="disabled"><a href="#">Procurement</a></li>
+                                <li class="disabled"><a href="#">Supplier Dev</a></li>
+                                <li class="disabled"><a href="#">Warehouse Management</a></li>
+                                <li class="disabled"><a href="#">Finance</a></li>
+                                <li class="disabled"><a href="#">MRP Controller</a></li>
+                                <li class="disabled"><a href="#">Site Technical</a></li>
+                                <li class="disabled"> <a href="#">Log</a></li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <h3>Status</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Current Status:</strong></span>
+                                Returned to requestor
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Originator:</strong></span>
+                                Mark Parry
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Type / Site:</strong></span>
+                                ZRAW / Knighton
+                            </li>
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Awaiting Action By:</strong></span>
+                                Mark Parry
+                            </li>
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Material No:</strong></span>
+                                442434
+                            </li>
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Reference:</strong></span>
+                                1934823482734-23
+                            </li>
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Date created:</strong></span>
+                                12.12.2013
+                            </li>
+                            <li class="list-group-item">
+                                <span class="prefix"><strong>Last update:</strong></span>
+                                <span class="label label-">12.15.2013</span>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <br />
+                        <div class="alert alert-danger" role="alert">Warning: This contains allergens</div>
+
+                        <form role="form">
+
+
+                            <div class="form-group">
+                                <label for="creationReasonInput">Creation Reason</label>
+                                <input class="form-control" id="creationReasonInput">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="furtherInfoInput">Further Information</label>
+                                <input class="form-control" id="furtherInfoInput">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="materialGroupInput">Material Group</label>
+                                <input class="form-control" id="materialGroupInput">
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <label for="">Item Description Prefix</label>
+                                <select class="form-control" id="supplierStatusSelect">
+                                    <option>New</option>
+                                    <option>Current</option>
+                                </select>
+                            </div>-->
+
+                            <div class="form-group">
+                                <label for="">Item Description Prefix</label>
+                                <input class="form-control" id="">
+                            </div>
+
+                            <div class="form-group inline">
+                                <label class="checkbox inline">
+                                    Contains Allergens
+                                    <input type="checkbox" id="containsAllergensCheckbox" value="option1" style="margin-left: 20px">
+                                </label>
+                            </div>
+
+                            <div id="allergensDiv">
+
+                                <li>Egg</li>
+                                <li>Wheat</li>
+
+                                <br />
+                                <div class="form-group form-inline">
+                                    <label class="col-xs-4 col-sm-3 control-label" for="selectbasic">Add Allergen</label>
+                                    <div>
+                                        <select id="selectbasic" name="selectbasic" class="form-control">
+                                            <option value="1">Egg</option>
+                                            <option value="2">Wheat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success">Add</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form-group">
+                                <label for="">Item Description </label>
+                                <input class="form-control" id="">
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="code">Base unit of measure</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Annual forecast volume of material to be raised </label>
+                                <input class="form-control" id="">
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="code">Proposed production date</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Old material number </label>
+                                <input class="form-control" id="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Products (CSNs) </label>
+                                <input class="form-control" id="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Manufacturer Part No </label>
+                                <input class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Plant Name </label>
+                                <input class="form-control" id="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Supplier SAP number </label>
+                                <input class="form-control" id="">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="">Supplier Name </label>
+                                <input class="form-control" id="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Non-Approved Supplier </label>
+                                <input class="form-control" id="">
+                            </div>
+
+
+                            <hr />
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+
+                    </div><!-- /.box -->
+
+
+                </div><!--/.col (left) -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster. A bit. Maybe. -->
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+
+    <script>
+        $(function () {
+            $('#allergensDiv').hide()
+
+            $('#containsAllergensCheckbox').change(function () {
+                $("#allergensDiv").slideToggle();
+            });
+
+        })
+    </script>
+
+</body>
+</html>
